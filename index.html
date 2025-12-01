@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>403 - Area Terlarang</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      /* Keyframes untuk Background Aurora */
+      .font-judul {
+        font-family: "Changa One", sans-serif;
+      }
+      .font-desk {
+        font-family: "Google Sans Flex", sans-serif;
+      }
       @keyframes aurora-move {
         0% {
           background-position: 0% 50%;
@@ -61,8 +76,8 @@
       .glass-card {
         background-color: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(20px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.7);
+        border: 1px solid rgba(66, 50, 78, 0.7);
+        box-shadow: 0 10px 40px 0 rgba(96, 5, 170, 0.7);
         position: relative;
         z-index: 10;
       }
@@ -156,12 +171,14 @@
       </h1>
 
       <h2
-        class="text-3xl sm:text-4xl font-light text-gray-100 mb-4 tracking-wider"
+        class="font-judul sm:text-4xl text-3xl text-gray-100 mb-4 tracking-wider whitespace-nowrap"
       >
         AREA TERLARANG !!
       </h2>
 
-      <p class="text-lg text-gray-300 mb-10 max-w-xs mx-auto text-center">
+      <p
+        class="text-lg font-desk text-gray-300 mb-10 max-w-xs mx-auto text-center"
+      >
         Anda terdeteksi tidak suci.<br />
         Halaman yang Anda cari tidak dapat dimuat karena Merupakan halaman suci
         dari hadast kecil dan besar.
@@ -178,7 +195,7 @@
     </div>
 
     <footer class="page-footer text-center">
-      <p class="text-sm text-gray-400 opacity-70">
+      <p class="text-sm font-desk italic text-gray-400 opacity-70">
         &copy; 2025 Copyright Angkasa Project
       </p>
     </footer>
